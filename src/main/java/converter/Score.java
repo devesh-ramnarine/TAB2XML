@@ -1,6 +1,7 @@
 package converter;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -29,6 +30,7 @@ import utility.GuitarUtils;
 import utility.Range;
 import utility.Settings;
 import utility.ValidationError;
+import java.util.Enumeration;
 
 public class Score extends ScoreComponent {
 
