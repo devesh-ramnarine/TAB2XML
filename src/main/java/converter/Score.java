@@ -173,7 +173,7 @@ public class Score extends ScoreComponent {
 		while (!noSplit) {
 			noSplit = true;
 			for (TabMeasure m : tabMeasureList) {
-				if (m.createTiedNotes())
+				if (m.createTiedNotes()) // // if evaluating to true, noSplit = false; exit out of while loop
 					noSplit = false;
 			}
 		}

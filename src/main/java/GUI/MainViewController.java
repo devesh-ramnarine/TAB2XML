@@ -307,7 +307,23 @@ public class MainViewController extends Application {
 	@FXML
 	private void previewButtonHandle() throws IOException {
 		System.out.println("Preview Button Clicked!");
+<<<<<<< HEAD
 		 converter.getMusicXML(); //returns the MusicXML output as a String
+=======
+		// converter.getMusicXML() returns the MusicXML output as a String
+		
+		Parent root;
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/previewSheetMusic.fxml"));
+			root = loader.load();
+			ShowMXLController controller = loader.getController();
+			controller.setMainViewController(this);
+			convertWindow = this.openNewWindow(root, "Sheet Music Preview");
+		} catch (IOException e) {
+			Logger logger = Logger.getLogger(getClass().getName());
+			logger.log(Level.SEVERE, "Failed to create new Window.", e);
+		}
+>>>>>>> branch 'master' of https://github.com/devesh-ramnarine/TAB2XML.git
 	}
 
 	public void refresh() {
