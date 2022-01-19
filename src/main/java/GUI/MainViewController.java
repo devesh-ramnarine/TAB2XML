@@ -309,7 +309,6 @@ public class MainViewController extends Application {
 		System.out.println("Preview Button Clicked!");
 		// converter.getMusicXML() returns the MusicXML output as a String
 		
-		
 		Parent root;
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/previewSheetMusic.fxml"));
