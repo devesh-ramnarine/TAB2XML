@@ -294,7 +294,7 @@ public class MainViewController extends Application {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/showMXL.fxml"));
 			root = loader.load();
-			ShowMXLController controller = loader.getController();
+			PreviewSheetMusicController controller = loader.getController();
 			controller.setMainViewController(this);
 			controller.update();
 			convertWindow = this.openNewWindow(root, "MusicXML output");
