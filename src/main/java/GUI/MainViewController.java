@@ -42,7 +42,7 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import utility.Range;
 import utility.Settings;
-
+//hi this is my comment -- Devesh
 public class MainViewController extends Application {
 	
 	private Preferences prefs;
