@@ -15,31 +15,30 @@ import javafx.stage.Stage;
 
 public class PreviewSheetMusicController extends Application { 
   
-	
-	private MainViewController mvc;
+	   private MainViewController mvc;
 	
 	@FXML public CodeArea mxlText;
 	@FXML TextField gotoMeasureField;
 	@FXML Button goToline;
 	
 	public PreviewSheetMusicController() {}
+	
+	
+	
+	
+	@FXML 
 	public void initialize() {
 		mxlText.setParagraphGraphicFactory(LineNumberFactory.get(mxlText));
 	}
-
-    public void setMainViewController(MainViewController mvcInput) {
-    	mvc = mvcInput;
-    }
-    
-    public void update() {
-		mxlText.replaceText(mvc.converter.getMusicXML());
-		mxlText.moveTo(0);
-		mxlText.requestFollowCaret();
-        mxlText.requestFocus();
-	}
-	
-	
-	 public void start(Stage primaryStage) throws Exception {}
-	
-
+	 public void setMainViewController(MainViewController mvcInput) {
+	    	mvc = mvcInput;
+	    }
+	 public void update() {
+			mxlText.replaceText(mvc.converter.getMusicXML());
+			mxlText.moveTo(0);
+			mxlText.requestFollowCaret();
+	        mxlText.requestFocus();
+		}
+		@Override
+		public void start(Stage primaryStage) throws Exception {}
 }
