@@ -43,7 +43,7 @@ import javafx.stage.Window;
 import utility.Range;
 import utility.Settings;
 /*
- * Hi this is Ions comment
+ * Hi this is Ions comment attempt
  */
 public class MainViewController extends Application {
 	
