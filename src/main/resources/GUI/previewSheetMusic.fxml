@@ -38,7 +38,6 @@
                            </padding>
                         </Label>
                         <TextField fx:id="gotoMeasureField" prefHeight="25.0" prefWidth="55.0" />
-                        <Button fx:id="gotoMeasureButton" mnemonicParsing="false" onAction="#handleGotoMeasure" prefHeight="25.0" prefWidth="42.0" text="Go" />
                      </children>
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
