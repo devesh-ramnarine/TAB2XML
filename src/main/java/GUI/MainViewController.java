@@ -43,13 +43,6 @@ import javafx.stage.Window;
 import utility.Range;
 import utility.Settings;
 
-
-//hi this is my comment -- Devesh
-
-/*
- * Hi this is Ions comment attempt
- */
-
 public class MainViewController extends Application {
 	
 	private Preferences prefs;
@@ -314,14 +307,16 @@ public class MainViewController extends Application {
 	@FXML
 	private void previewButtonHandle() throws IOException {
 		System.out.println("Preview Button Clicked!");
+		// converter.getMusicXML() returns the MusicXML output as a String
+		
+		
 		Parent root;
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/showMXL.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/previewSheetMusic.fxml"));
 			root = loader.load();
-			ShowMXLController controller = loader.getController();
+			PreviewSheetMusicController controller = loader.getController();
 			controller.setMainViewController(this);
-			controller.update();
-			convertWindow = this.openNewWindow(root, "MusicXML output");
+			convertWindow = this.openNewWindow(root, "Sheet Music Preview");
 		} catch (IOException e) {
 			Logger logger = Logger.getLogger(getClass().getName());
 			logger.log(Level.SEVERE, "Failed to create new Window.", e);
