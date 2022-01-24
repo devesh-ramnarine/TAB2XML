@@ -70,7 +70,7 @@ public class MainViewController extends Application {
 	@FXML  Button goToline;
 	@FXML  ComboBox<String> cmbScoreType;
 
-
+//	testing conflicts
 	public MainViewController() {
 		Settings s = Settings.getInstance();
 		prefs = Preferences.userRoot();

@@ -24,7 +24,9 @@ public class ShowMXLController extends Application {
 	@FXML TextField gotoMeasureField;
 	@FXML Button goToline;
 
-	public ShowMXLController() {}
+	public ShowMXLController() {
+		
+	}
 
 	@FXML 
 	public void initialize() {
