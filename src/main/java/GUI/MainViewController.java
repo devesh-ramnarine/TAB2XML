@@ -43,7 +43,6 @@ import javafx.stage.Window;
 import utility.Range;
 import utility.Settings;
 //commit fix
-//Ahmed devlope test
 public class MainViewController extends Application {
 	
 	private Preferences prefs;
