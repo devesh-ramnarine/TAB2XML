@@ -7,6 +7,7 @@ import org.xml.sax.InputSource;
 import org.w3c.dom.*;
 import java.io.*;
 
+//testing push before pull
 public class ParseXmlString {
 
 	public ParseXmlString() {
