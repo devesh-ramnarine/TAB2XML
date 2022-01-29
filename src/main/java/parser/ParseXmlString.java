@@ -1,5 +1,5 @@
 package parser;
-
+//testing commits
 import javax.xml.parsers.*;
 import org.xml.sax.InputSource;
 
@@ -7,9 +7,9 @@ import org.w3c.dom.*;
 import java.io.*;
 
 public class ParseXmlString {
-	
+
 	public ParseXmlString() {
-		
+
 	}
 
 	public static void main(String[] args) {
@@ -308,38 +308,38 @@ public class ParseXmlString {
 			//input is
 			Document doc = dBuilder.parse(is);
 
-			//better Visual 
+			//better Visual
 			doc.getDocumentElement().normalize();
-			
+
 //			----------------------------------------------------------------------------------------------------------------------------
-			
-			
+
+
 //			NodeList nodeList1 = doc.getElementsByTagName("score-partwise");
-//			
+//
 //			ParseXmlString parser = new ParseXmlString();
-//			
+//
 //			for(int i = 0; i < nodeList1.getLength(); i++) {
 //				parser.printChild(nodeList1.item(i));
 //			}
-			
+
 //			----------------------------------------------------------------------------------------------------------------------------
-//			THIS IS THE WAY I FOUND WORKS BEST 
-			
-			
+//			THIS IS THE WAY I FOUND WORKS BEST
+
+
 			//get all nodes in doc
 			NodeList nodesList1 = doc.getElementsByTagName("*");
-			
+
 			//iterate and print nodes
 			for (int i = 0; i < nodesList1.getLength(); i++) {
 				Node node = nodesList1.item(i);
 
 				Element element = (Element) node;
 				System.out.println(element.getNodeName());
-				
+
 				String name = element.getAttribute("name");
 				System.out.println(name);
 			}
-			
+
 //			----------------------------------------------------------------------------------------------------------------------------
 
 //			//get root element and print
@@ -349,17 +349,17 @@ public class ParseXmlString {
 //			NodeList nodeList1 = doc.getE
 
 			System.out.println("----------------------------");
-			
+
 //			for(int i = 0; i < nodeList1.getLength(); i++) {
 //				NodeList childNodesList1 = nodeList1.item(i).getChildNodes();
-//				
-//				
+//
+//
 //			}
-			
-			
-//--------------------------------------------------------------------------------------------------------------------------------------			
-			
-				
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 //			for (int i = 0; i < nodeList1.getLength(); i++) {
 //				Node node1 = nodeList1.item(i);
@@ -367,38 +367,38 @@ public class ParseXmlString {
 //
 //				if (node1.getNodeType() == Node.ELEMENT_NODE) {
 //					Element eElement = (Element) node1;
-//					System.out.println("Student roll no : " 
+//					System.out.println("Student roll no : "
 //							+ eElement.getAttribute("rollno"));
-//					System.out.println("First Name : " 
+//					System.out.println("First Name : "
 //							+ eElement
 //							.getElementsByTagName("firstname")
 //							.item(0)
 //							.getTextContent());
-//					System.out.println("Last Name : " 
+//					System.out.println("Last Name : "
 //							+ eElement
 //							.getElementsByTagName("lastname")
 //							.item(0)
 //							.getTextContent());
-//					System.out.println("Nick Name : " 
+//					System.out.println("Nick Name : "
 //							+ eElement
 //							.getElementsByTagName("nickname")
 //							.item(0)
 //							.getTextContent());
-//					System.out.println("Marks : " 
+//					System.out.println("Marks : "
 //							+ eElement
 //							.getElementsByTagName("marks")
 //							.item(0)
 //							.getTextContent());
 //				}
 //			}
-		} 
+		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
 
 //		--------------------------------------------------------------------------------------------------------------------------------
-		
-		
+
+
 //		try {
 //			DocumentBuilderFactory dbf =DocumentBuilderFactory.newInstance();
 //			DocumentBuilder db = dbf.newDocumentBuilder();
@@ -431,17 +431,17 @@ public class ParseXmlString {
         Title: Manager
         Name: Sara
         Title: Clerk
-		 */    
+		 */
 
 	}
-	
+
 //	public void printChild(Node node) {
 //	    NodeList childNodes = node.getChildNodes();
 //	    System.out.println("Node: " + node.getNodeType() + ", " + node.getLocalName());
-//	    
+//
 //	    for(int i = 0; i < childNodes.getLength(); i++) {
 //	        Node childNode = childNodes.item(i);
-//	        
+//
 //	        if(childNode.hasAttributes()) {
 //	            System.out.println("Attributes: " + childNode.getAttributes()); //just an example...
 //	            //Here you can iterate over each attributes to do something
